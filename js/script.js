@@ -1,16 +1,25 @@
 'use strict';
 
-window.addEventListener('resize', function(){
-    if(window.innerWidth < 750) {
-        document.querySelector('.header__button').textContent = 'Бесплатная консультация';
-    } else {
-        document.querySelector('.header__button').textContent = 'Получить бесплатную консультацию';
-    }
-})
-$(document).ready(function() {
-    $('.spoiler__title').click(function(event) {
+$(document).ready(function () {
+    $('.spoiler__title').click(function () {
         $(this).toggleClass('active').next().slideToggle(300);
-
         
     })
+    const textChange = () => {
+        if (window.innerWidth < 750) {
+            $('.header__button').text('Бесплатная консультация');
+        } else {
+            $('.header__button').text('Получить бесплатную консультацию');
+        }
+    }
+    textChange();
+    window.addEventListener('resize', textChange);
+
+    
+    
 })
+
+
+
+
+

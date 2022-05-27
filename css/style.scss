@@ -199,15 +199,6 @@
         flex: 1 0 50%;
     }
 
-    &__board img {
-       
-    }
-    // &__picture img{
-    //     max-width: 120%;
-    // }
-    
-    
-
     &__name {
         font-family: 'Roboto Condensed';
         font-style: normal;
@@ -619,6 +610,7 @@ z-index: 2;
         display: grid;
         grid-template-rows: auto auto auto;
         grid-template-columns: auto auto;
+        position: relative;
         
     }
 
@@ -638,6 +630,9 @@ z-index: 2;
     &__name::placeholder {
         color: #FFFFFF;
     }
+    &__name:invalid {
+        color: red;
+    }
 
     &__phone {
         width: 270px;
@@ -653,6 +648,9 @@ z-index: 2;
 
     &__phone::placeholder {
         color: #FFFFFF;
+    }
+    &__phone:invalid {
+        color: red;
     }
 
     &__questions {
@@ -889,9 +887,6 @@ z-index: 2;
         max-width: 100%;
 
     }    
-    div .header__button {
-
-    }
     .feedback__img img {
         max-width: 100%;
     }
@@ -996,9 +991,6 @@ z-index: 2;
     .about__wrapper {
         margin-top: 20px;
         padding-bottom: 20px;
-    }
-    .about__text {
-
     }
     
     .main__delta-big {
@@ -1228,8 +1220,6 @@ z-index: 2;
         font-weight: 400;
         font-size: 13px;
         line-height: 24px;
-        /* identical to box height, or 185% */
-
         display: flex;
         align-items: center;
         letter-spacing: 0.04em;
@@ -1279,7 +1269,7 @@ z-index: 2;
     .header__button {
         margin: 0;
         width: 287px;
-        margin: 40px 2% 0;
+        margin: 40px 0 0;
     }
     .main__delta-small {
         display: none;
@@ -1313,3 +1303,11 @@ z-index: 2;
 
 }
 
+.validation-phone {
+    position: absolute;
+    left: 10px;
+    right: 20px;
+    top: 113px;
+    font-size: 15px;
+    color: rgb(112, 0, 0);
+}

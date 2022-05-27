@@ -616,6 +616,7 @@ h1, h2, h3, h4, h5, h6 {
       grid-template-rows: auto auto auto;
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
+  position: relative;
 }
 
 .feedback__name {
@@ -647,6 +648,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #FFFFFF;
 }
 
+.feedback__name:invalid {
+  color: red;
+}
+
 .feedback__phone {
   width: 270px;
   height: 50px;
@@ -673,6 +678,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .feedback__phone::placeholder {
   color: #FFFFFF;
+}
+
+.feedback__phone:invalid {
+  color: red;
 }
 
 .feedback__questions {
@@ -1248,7 +1257,6 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
     font-size: 13px;
     line-height: 24px;
-    /* identical to box height, or 185% */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1295,7 +1303,7 @@ h1, h2, h3, h4, h5, h6 {
   .header__button {
     margin: 0;
     width: 287px;
-    margin: 40px 2% 0;
+    margin: 40px 0 0;
   }
   .main__delta-small {
     display: none;
@@ -1325,5 +1333,14 @@ h1, h2, h3, h4, h5, h6 {
   .spoiler {
     width: 100%;
   }
+}
+
+.validation-phone {
+  position: absolute;
+  left: 10px;
+  right: 20px;
+  top: 113px;
+  font-size: 15px;
+  color: #700000;
 }
 /*# sourceMappingURL=style.css.map */

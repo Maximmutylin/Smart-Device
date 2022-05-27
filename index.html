@@ -158,13 +158,13 @@
                     <div class="feedback__title">Остались вопросы? Задайте их нам!</div>
                     <div class="feedback__subtitle">Мы проконсультируем Вас бесплатно</div>
                     <form class="feedback__form" action="#">
-                        <input class="feedback__name" type="text" name="name" placeholder="Ваше имя">
-                        <input class="feedback__phone" type="tel" placeholder="Ваш телефон">
-                        <textarea class="feedback__questions" placeholder="Ваш вопрос" name="questions" id="" cols="30"
+                        <input class="feedback__name" type="text" name="name" placeholder="Ваше имя"  required pattern="^[a-zA-Zа-яА-ЯЁё ]+$" title="Введите имя только кириллицей или латинницей, без прочих символов"> 
+                        <input class="feedback__phone" type="tel" placeholder="Ваш телефон" maxlength="11" required pattern="^((\+7|7)+([0-9]){10})$" title="Необходимо ввести номер в формате: 79889947481">
+                        <textarea class="feedback__questions" placeholder="Ваш вопрос" name="questions" id="" cols="30" required
                             rows="10"></textarea>
                         <button class="feedback__btn">ЗАДАТЬ ВОПРОС</button>
                         <div class="feedback__agreement">
-                            <input type="checkbox" name="agreement" id="">
+                            <input type="checkbox" name="agreement" required id="">
                             <label for="agreement">Я согласен на обработку <p> персональных данных</p></label>
                         </div>
                     </form>
