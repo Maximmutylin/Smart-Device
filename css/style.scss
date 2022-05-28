@@ -689,7 +689,7 @@ z-index: 2;
     }
     &__agreement {
         margin-top: 43px;
-        width: 246px;
+        width: auto;
         font-family: 'PT Mono';
         font-style: normal;
         font-weight: 400;
@@ -1300,9 +1300,27 @@ z-index: 2;
     .spoiler {
         width: 100%;
     }   
+    .footer__message {
+        margin-top: 15px;
+    }
+    .footer__message img{
+       display: block;
+        margin: 0px auto 16px;
+    }
 
 }
-
+.footer__message img {
+    width: 27px;
+    height: 27px;
+    display: block;
+    margin: 0 10px;
+}
+.footer__message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
 .validation-phone {
     position: absolute;
     left: 10px;

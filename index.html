@@ -23,10 +23,10 @@
                 </div>
                 <div class="header__links">
                     <div class="header__gmail">
-                        <img src="./img/mail.svg" alt="">
+                        <a href="mailto:maksimmutylin@hmail.com"><img src="./img/mail.svg" alt=""></a>
                     </div>
                     <div class="header__tel">
-                        <img src="./img/call.svg" alt="">
+                       <a href="tel:+79889947481"><img src="./img/call.svg" alt=""></a>
                     </div>
                 </div>
             </nav>
@@ -58,7 +58,7 @@
                         <div class="header__specification">производство и монтаж, поставка комплектующих, блоков и
                             модулей</div>
                     </div>
-                    <div class="header__button">Получить бесплатную консультацию</div>
+                    <a class="link-btn" href="#questions"><div class="header__button">Получить бесплатную консультацию</div></a>
                 </div>
 
                 <div class="header__picture">
@@ -103,7 +103,7 @@
                 </div>
             </div>
 
-            <section class="about">
+            <section class="about" id="about">
                 <div class="about__wrapper">
                     <div class="about__img"><img src="./img/2025.png" alt=""></div>
                     <div class="about__info">
@@ -123,20 +123,20 @@
             </section>
         </div>
 
-        <section class="services">
+        <section class="services" >
             <div class="services__wrapper">
                 <h4 class="services__title">Service Device предлагает следующие товары и услуги</h4>
                 <div class="services__icons">
                     <div class="services__item">
-                        <div class="services__name">Производство печатных плат</div>
+                        <div class="services__name" id="services">Производство печатных плат</div>
                         <div class="services__link">></div>
                     </div>
                     <div class="services__item">
-                        <div class="services__name">Монтаж печатных плат</div>
+                        <div class="services__name" id="services-2">Монтаж печатных плат</div>
                         <div class="services__link">></div>
                     </div>
                     <div class="services__item">
-                        <div class="services__name">Комплектующие для светотехники</div>
+                        <div class="services__name" id="services-3">Комплектующие для светотехники</div>
                         <div class="services__link">></div>
                     </div>
 
@@ -148,16 +148,16 @@
         <section class="feedback">
             <img class="feedback__delta-small" src="./img/Polygon-1.png" alt="">
             <img class="feedback__delta" src="./img/Polygon.png" alt="">
-            <div class="feedback__wrapper">
+            <div class="feedback__wrapper" id="questions" >
 
                 <div class="feedback__img"><img
                         src="./img/paper_airplane_3d_model_obj_blend_16ec3a53-a93c-4854-8f34-5481fc9139d1.png" alt="">
                 </div>
 
-                <div class="feedback__form-wrapper">
+                <div class="feedback__form-wrapper" >
                     <div class="feedback__title">Остались вопросы? Задайте их нам!</div>
                     <div class="feedback__subtitle">Мы проконсультируем Вас бесплатно</div>
-                    <form class="feedback__form" action="#">
+                    <form class="feedback__form" action="#" >
                         <input class="feedback__name" type="text" name="name" placeholder="Ваше имя"  required pattern="^[a-zA-Zа-яА-ЯЁё ]+$" title="Введите имя только кириллицей или латинницей, без прочих символов"> 
                         <input class="feedback__phone" type="tel" placeholder="Ваш телефон" maxlength="11" required pattern="^((\+7|7)+([0-9]){10})$" title="Необходимо ввести номер в формате: 79889947481">
                         <textarea class="feedback__questions" placeholder="Ваш вопрос" name="questions" id="" cols="30" required
@@ -192,8 +192,10 @@
                 </div>
                 <div class="footer__text">1999-2018 SD Service Devices</div>
                 <div class="footer__message">
-                    <img src="./img/Group 7.1.svg" alt="">
-
+                    <!-- <img src="./img/Group 7.1.svg" alt=""> -->
+                    <a href="https://ru-ru.facebook.com/"><img src="./img/111jpg.jpg" alt=""></a>
+                    <a href="https://ok.ru/"><img src="./img/222.jpg" alt=""></a>
+                    <a href="https://vk.com/"><img src="./img/333.jpg" alt=""></a>
                 </div>
                 
             </div>
@@ -202,11 +204,10 @@
                 <div class="spoiler__item">
                     <div class="spoiler__title">Разделы сайта</div>
                     <ul class="spoiler__text">
-                        <li>О компании</li>
-                        <li>Продукты</li>
-                        <li>Производство печатных плат</li>
-                        <li>Монтаж печатных плат</li>
-                        <li>Комплектующие   </li>
+                        <a href="#about" class="link-btn"><li>О компании</li></a>
+                        <a href="#services" class="link-btn"><li>Производство печатных плат</li></a>
+                        <a href="#services-2"class="link-btn"> <li>Монтаж печатных плат</li></a>
+                        <a href="#services-3" class="link-btn"><li>Комплектующие</li></a>
                         <li>Доставка</li>
                         <li>Контакты</li>
                     </ul>
@@ -227,17 +228,16 @@
             <div class="footer__second-column">
                 <ul class="footer__list">
                     <li>Разделы сайта</li>
-                    <li>О компании</li>
-                    <li>Продукты</li>
-                    <li>Производство печатных плат</li>
-                    <li>Монтаж печатных плат</li>
+                    <a href="#about" class="link-btn"><li>О компании</li></a>
+                    <a href="#services" class="link-btn"><li>Производство печатных плат</li></a>
+                    <a href="#services-2" class="link-btn"><li>Монтаж печатных плат</li></a>
                 </ul>
             </div>
 
             <div class="footer__third-column">
                 <ul class="footer__list footer__list--none">
                     <li></li>
-                    <li>Комплектующие</li>
+                     <a href="#services-3" class="link-btn" ><li>Комплектующие</li></a>
                     <li>Доставка</li>
                     <li>Контакты</li>
                 </ul>

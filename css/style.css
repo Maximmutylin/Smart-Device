@@ -736,7 +736,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .feedback__agreement {
   margin-top: 43px;
-  width: 246px;
+  width: auto;
   font-family: 'PT Mono';
   font-style: normal;
   font-weight: 400;
@@ -1333,6 +1333,33 @@ h1, h2, h3, h4, h5, h6 {
   .spoiler {
     width: 100%;
   }
+  .footer__message {
+    margin-top: 15px;
+  }
+  .footer__message img {
+    display: block;
+    margin: 0px auto 16px;
+  }
+}
+
+.footer__message img {
+  width: 27px;
+  height: 27px;
+  display: block;
+  margin: 0 10px;
+}
+
+.footer__message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
 }
 
 .validation-phone {
